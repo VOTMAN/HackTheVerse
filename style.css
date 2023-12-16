@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display','Space Mono', monospace, serif;
     background-color: #fbfcfd;
 }
 
@@ -98,9 +98,16 @@ body {
     height: 200px;
 }
 
+.productHolder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .products {
     display: flex;
-    justify-content: space-around;
+    text-align: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -108,4 +115,8 @@ body {
     list-style-type: none;
     text-decoration: none;
     color: #eee4e4;
+}
+
+.imgText {
+    position: absolute;
 }
