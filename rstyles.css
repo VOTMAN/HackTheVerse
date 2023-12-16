@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Add or modify styles for the updated elements */
+/* ... (previous styles) ... */
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('eye.svg'); /* Add an eye icon for password toggle */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.password-hidden {
+    background-image: url('eye-slash.svg'); /* Add an eye-slash icon for password toggle when hidden */
+}
+
+/* Add these styles for the password toggle */
+.password-input-container {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('eye.svg'); /* Add an eye icon for password toggle */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.password-hidden {
+    background-image: url('eye-slash.svg'); /* Add an eye-slash icon for password toggle when hidden */
+}
+
