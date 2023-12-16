@@ -1,0 +1,63 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Playfair Display','Space Mono', monospace, serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #596cb9;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .about-us h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-us h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  
+  footer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #596cb9;
+    color: #fff;
+  }
+  body{
+    background-color: antiquewhite;
+  }

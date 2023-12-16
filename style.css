@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Playfair Display','Space Mono', monospace, serif;
+    font-family: 'Space Mono', monospace, serif;
     background-color: #fbfcfd;
 }
 
@@ -66,6 +66,12 @@ body {
     background-color: #45a049;
 }
 
+.text {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: gray;
+}
 
 .mainImg{
     background-size: cover;
@@ -104,6 +110,12 @@ body {
     align-items: center;
 }
 
+.homeBtn {
+    list-style-type: none;
+    text-decoration: none;
+    color: #eee4e4;
+}
+
 .products {
     display: flex;
     text-align: center;
@@ -111,12 +123,56 @@ body {
     align-items: center;
 }
 
-.homeBtn {
-    list-style-type: none;
-    text-decoration: none;
-    color: #eee4e4;
-}
-
 .imgText {
     position: absolute;
+    font-size: 2rem;
+    color: #c9bfbf;
+    background: #031014;
+    opacity: 0;
+}
+
+.imgText:hover {
+    transition: .5s;
+    opacity: 85%;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-list li:last-child {
+  margin-bottom: 0;
+}
+footer{
+background-image: url(footer.jpg);
+background-size: cover;
 }
