@@ -6,15 +6,19 @@ body, h1, h2, p, ul {
   body {
     font-family: 'Playfair Display','Space Mono', monospace, serif;
     line-height: 1.6;
-  }
+    background-color: antiquewhite;
+    text-align: center;
+    min-height: 100vh;
+    
+}
   
   header {
     background-color: #596cb9;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
   }
 
-  .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,6 +55,7 @@ body, h1, h2, p, ul {
 
 main {
     padding: 20px;
+    margin-bottom: auto;
   }
   
 .about-us h1 {
@@ -58,24 +63,19 @@ main {
     margin-bottom: 20px;
   }
   
-  .about-us h2 {
+.about-us h2 {
     font-size: 1.5em;
     margin-top: 30px;
   }
 
-  .foot {
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;    
-    margin-top: 7.8rem;
-  }
-
-  footer {
     text-align: center;
     padding: 10px 0;
     background-color: #596cb9;
     color: #fff;
-  }
-  body{
-    background-color: antiquewhite;
-  }
+    margin-top: auto;
+}
