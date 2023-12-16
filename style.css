@@ -1,18 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
+    background-color: #fbfcfd;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f0fbfd;
+    background-color: #596cb9;
     padding: 14px 20px;
     color:#031014 ;
 }
 
 .navbar-brand h2 {
-    color: #031014;
+    color: #d3dfe2;
     margin: 0;
 }
 
@@ -25,7 +31,7 @@ body {
 
 .navbar-menu ul li a {
     display: block;
-    color: #031014;
+    color: #eee4e4;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -33,7 +39,7 @@ body {
 
 .navbar-menu ul li a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(60, 160, 56);
 }
 
 .navbar-search {
@@ -48,7 +54,7 @@ body {
 }
 
 .navbar-search button {
-    background-color: #4CAF50;
+    background-color: #3e9fac;
     color: white;
     padding: 6px 10px;
     border: none;
@@ -59,17 +65,47 @@ body {
 .navbar-search button:hover {
     background-color: #45a049;
 }
-#image{
-    background-image: url(./main.jpg);
+
+
+.mainImg{
     background-size: cover;
     width: 100%;
     height: 540px;
-    filter:brightness(50%);
+    filter: brightness(50%);
+    text-align: center;
+
+}
+
+.mainImgContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
     text-align: center;
 }
-#image2{
-    background-image:url(./main.jpg);
+
+.prodImg{
     background-size: cover;
     width: 200px;
     height: 200px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeBtn {
+    list-style-type: none;
+    text-decoration: none;
+    color: #eee4e4;
 }
