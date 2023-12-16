@@ -46,13 +46,15 @@ body, h1, h2, p, ul {
     font-size: 1.5em;
     margin-top: 30px;
   }
-  
-  footer {
+
+  .foot {
     display: flex;
-    height: 100vh;
     flex-direction: column;
-    margin-top: auto;
-    justify-content: space-between;
+    justify-content: space-between;    
+    margin-top: 7.8rem;
+  }
+
+  footer {
     text-align: center;
     padding: 10px 0;
     background-color: #596cb9;
