@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us - E-Commerce</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h2><a href="./index.html" class="homeBtn">My Website</a></h2>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>    
+        </header>
+    <h3 class="hide">Submitted</h3>
+    <section class="contact-form">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="telc" id="phone" name="phone">
+
+            <label for="order-number">Order Number:</label>
+            <input type="text" id="order-number" name="order-number">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" >Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 E-Commerce Store. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
