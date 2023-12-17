@@ -19,7 +19,7 @@
             <h2><a href="./index.html" class="homeBtn">My Website</a></h2>
         </div>
         <div class="navbar-search">
-            <input type="text" placeholder="Search...">
+            <input id="searchbar" onkeyup="searchProduct()" type="text" name="search" placeholder="Search...">
             <button><i class="fa fa-search"></i></button>
         </div>
         <div class="navbar-menu">
@@ -29,9 +29,16 @@
                 <li><a href="./User Authntication/login/Login.html">Login</a></li>
             </ul>
         </div>    
-
     </nav>
-
+    
+    
+            <ul class = "item-holder">
+                <ul class="items hide"><a href="./products/product.html">Clothes</a></ul>
+                <ul class="items hide"><a href="./products/product.html">Grocery</a></ul>
+                <ul class="items hide"><a href="./products/product.html">Cosmetics</a></ul>
+                <ul class="items hide"><a href="./products/product.html">Electronics</a></ul>
+                <ul class="items hide"><a href="./products/product.html">Essential</a></ul>
+            </ul>
     <main>
         <img src="./imgs/main.jpg" class="mainImg">
         <div class = "center">Something for everyone! Browse our wide selection today</div>

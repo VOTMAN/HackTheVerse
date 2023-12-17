@@ -49,6 +49,47 @@ h3 {
     color: rgb(60, 160, 56);
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact-list li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-image: url(./imgs/footer.jpg);
+    background-size: cover;
+}
+
 
 .contact-form {
     max-width: 600px;
