@@ -68,7 +68,8 @@ body {
 }
 
 .text {
-    margin: 7rem 10rem;
+    display: flex;
+    margin: 7vh 10vh;
     font-size: 1.5rem;
     text-align: center;
     color: rgb(56, 51, 51);
@@ -182,6 +183,16 @@ footer {
 }
 
 @media screen and (max-width: 1095px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        align-items: center;
+        background-color: #596cb9;
+        padding: 14px 20px;
+        color: #031014;
+    }
+
     .navbar-menu ul li a {
         display: block;
         color: #eee4e4;
