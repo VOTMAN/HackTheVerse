@@ -13,6 +13,11 @@ main {
     margin-top: 8rem;
 }
 
+.hide {
+    display: none;
+}
+
+
 .navbar {
     display: flex;
     justify-content: center;
