@@ -172,3 +172,72 @@ function displayCoins() {
 
 // Initial display of coins
 displayCoins();
+// product.js
+// ... (your existing code)
+
+function addtocart(title) {
+    const selectedItem = product.find((item) => item.title === title);
+    const existingItem = cart.find((item) => item.title === title);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ ...selectedItem, quantity: 1 });
+    }
+
+    coins += 10;
+    displaycart();
+    displayCoins();
+}
+
+function delElement(index) {
+    coins -= 10 * cart[index].quantity;
+    cart.splice(index, 1);
+    displaycart();
+    displayCoins();
+}
+
+function displaycart() {
+    let total = 0;
+    document.getElementById("count").innerHTML = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+    if (cart.length === 0) {
+        document.getElementById('cartItem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML = "$ " + 0 + ".00";
+    } else {
+        document.getElementById("cartItem").innerHTML = cart.map((item, index) => {
+            const { image, title, price, quantity } = item;
+            total += price * quantity;
+
+            document.getElementById("total").innerHTML = "$ " + total.toFixed(2);
+
+            return (
+                `<div class='cart-item'>
+                    <div class='row-img'>
+                        <img class='rowimg' src=${image}>
+                    </div>
+                    <p style='font-size:12px;'>${title} (x${quantity})</p>
+                    <h2 style='font-size: 15px;'>$ ${price * quantity}.00</h2>
+                    <div class='quantity-btns'>
+                        <button onclick='updateQuantity(${index}, -1)'>-</button>
+                        <span>${quantity}</span>
+                        <button onclick='updateQuantity(${index}, 1)'>+</button>
+                    </div>
+                    <i class='fa-solid fa-trash' onclick='delElement(${index})'></i>
+                </div>`
+            );
+        }).join('');
+    }
+}
+
+function updateQuantity(index, change) {
+    cart[index].quantity += change;
+    coins += 10 * change;
+    displaycart();
+    displayCoins();
+}
+
+function checkout() {
+    // Add your checkout logic here
+    alert("Checkout button clicked. Implement your checkout logic!");
+}
